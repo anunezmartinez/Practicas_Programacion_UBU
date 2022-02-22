@@ -1,3 +1,11 @@
+/*                                                      
+    Author: Adrián Núñez Martínez                          
+                                                           
+    Purpose:  Ejercicios de Funciones.            
+                                                          
+    Ubicación: Universidad de Burgos.         
+*/  
+
 #include <stdio.h>
 
 int sumar(int num1, int num2);
