@@ -21,6 +21,7 @@ int main()
    int parametro1 = 0;
    int parametro2 = 0;
    int resultado = 0;
+   float resDiv = 0;
    
    
    LeerNumero(&parametro1);
@@ -39,9 +40,9 @@ int main()
    
    EscribirResultado(parametro1, parametro2,(char)42,resultado);
 
-   Dividir(parametro1, parametro2, &resultado);
+   Dividir(parametro1, parametro2, &resDiv);
    
-   EscribirResultado(parametro1, parametro2,(char)47,resultado);
+   EscribirResultado(parametro1, parametro2,(char)47,resDiv);
 
    return 0;
 }
