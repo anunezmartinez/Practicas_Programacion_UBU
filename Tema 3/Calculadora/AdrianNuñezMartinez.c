@@ -76,8 +76,12 @@ void Multiplicar(int num1, int num2, int *multiplicacion)
 }
 void Dividir(int num1, int num2, float *division)
 {
-
-   *division = num1 / num2;
+   if(num2 != 0){
+      *division = num1 / num2;
+   } else{
+      printf("No se puede dividir entre cero.\n");
+   }
+   
 
 }
 
