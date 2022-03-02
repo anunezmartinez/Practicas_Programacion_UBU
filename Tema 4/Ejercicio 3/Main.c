@@ -14,11 +14,9 @@ int main()
     pide_radio(&radio);
     int lados = 0;
     lados = pide_lados();
-
     
     longitud_lado(lados, radio);
-
-    parimetro( ,lados);
+    //perimetro( ,lados);
 
     return 0;
 }
