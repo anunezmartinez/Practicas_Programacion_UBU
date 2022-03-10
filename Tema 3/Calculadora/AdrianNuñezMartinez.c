@@ -42,7 +42,11 @@ int main()
 
    Dividir(parametro1, parametro2, &resDiv);
    
-   EscribirResultado(parametro1, parametro2,(char)47,resDiv);
+   if(parametro2 != 0){
+       EscribirResultado(parametro1, parametro2,(char)47,resDiv);
+   } else{
+      printf("No se puede dividir entre cero.\n");
+   }
 
    return 0;
 }
@@ -76,11 +80,8 @@ void Multiplicar(int num1, int num2, int *multiplicacion)
 }
 void Dividir(int num1, int num2, float *division)
 {
-   if(num2 != 0){
-      *division = num1 / num2;
-   } else{
-      printf("No se puede dividir entre cero.\n");
-   }
+
+      *division = (float)num1 / (float)num2;
    
 
 }
